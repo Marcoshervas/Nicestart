@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".Login">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -26,46 +26,68 @@
         android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_thunder"
-        app:tint="@color/white"
         android:layout_marginTop="64dp"
-        />
+        android:src="@drawable/ic_thunder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/til1"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        android:layout_marginTop="64dp">
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="Username"
             android:drawableLeft="@drawable/usericon"
-            />
+            android:hint="Username" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/til2"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/til1"
         app:passwordToggleEnabled="true">
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="Password"
             android:drawableStart="@drawable/usericon"
-            />
+            android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:backgroundTint="@color/buttoncustom"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/til2" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        style="@style/btnOutlined"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,5 @@
     <color name="green_700">#027333</color>
     <color name="green_500">#03A63C</color>
     <color name="green_200">#04D939</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

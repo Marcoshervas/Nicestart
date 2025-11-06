@@ -11,6 +11,7 @@
     </style>
     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">@color/transparent</item>
+        <item name="displayOptions">showHome</item>
     </style>
     <style name="Theme.Nicestart.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
 

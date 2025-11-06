@@ -24,9 +24,9 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/ic_thunder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         android:id="@+id/til1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/logo">
@@ -77,19 +77,19 @@
         android:text="Login"
         android:onClick="openMain"
         android:textColor="@android:color/black"
-        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toStartOf="@id/btnSignIn"
         app:layout_constraintStart_toEndOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/til2" />
 
     <Button
         android:id="@+id/btnSignIn"
         android:layout_width="0dp"
-        android:layout_height="64dp"
+        android:layout_height="wrap_content"
         style="@style/btnOutlined"
         android:text="Sign Up"
         android:onClick="openSignUp"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
-        app:layout_constraintStart_toEndOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintStart_toEndOf="@id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/til2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

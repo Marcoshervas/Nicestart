@@ -2,9 +2,11 @@
 
 Este **repository** se usara durante diferentes proyectos
 
-![login activity](img/login.png)
-![SignUp activity](img/signUp.png)
+|   Aqui esta la login activity    |   Aqui esta la sign In activity    |
+|:--------------------------------:|:----------------------------------:|
+| ![login activity](img/login.png) | ![SignUp activity](img/signUp.png) |
+
 
 >This repository is licensed under
->[](https://creativecommons.org/licenses/by-sa/4.0/)
+>[Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 

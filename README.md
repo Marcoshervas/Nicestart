@@ -1,6 +1,7 @@
 ## Introducion a las interfaces
 
-Este **repository** se usara durante diferentes proyectos
+Este **repositorio** se usara durante diferentes proyectos.
+De momento son unas activities interconectadas entre ellas para poder tener una navegacion sencilla.
 
 |   Aqui esta la login activity    |   Aqui esta la sign In activity    |
 |:--------------------------------:|:----------------------------------:|

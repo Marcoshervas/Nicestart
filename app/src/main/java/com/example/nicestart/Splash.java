@@ -3,6 +3,8 @@ package com.example.nicestart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -30,6 +32,11 @@ public class Splash extends AppCompatActivity {
                 .into(mSea);
 
         openApp();
+
+        ImageView thunder = findViewById(R.id.logo);
+
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.logoanim);
+        thunder.startAnimation(myanim);
     }
 
     private void openApp() {
@@ -37,7 +44,7 @@ public class Splash extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Splash.this, Profile.class);
+                Intent intent = new Intent(Splash.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);

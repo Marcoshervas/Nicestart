@@ -101,7 +101,7 @@
         android:layout_width="0dp"
         android:backgroundTint="@color/buttoncustom"
         android:text="Confirm"
-        android:onClick="openMain"
+        android:onClick="openProfile"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
         app:layout_constraintStart_toEndOf="@id/guideline1"

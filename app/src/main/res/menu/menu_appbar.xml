@@ -23,4 +23,11 @@
                 app:showAsAction="never"/>
         </menu>
     </item>
+    <item
+        android:id="@+id/goLogin"
+        android:title="Login button"
+        android:icon="@drawable/ic_thunder"
+        android:iconTint="@color/black"
+        app:showAsAction="ifRoom"
+        />
 </menu>

@@ -24,19 +24,19 @@ public class Splash extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-        ImageView mSea = findViewById(R.id.backView);
+        //ImageView mSea = findViewById(R.id.backView);
 
-        Glide.with(this)
-                .load("https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-                .centerCrop()
-                .into(mSea);
+        //Glide.with(this)
+        //        .load("https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+        //        .centerCrop()
+        //        .into(mSea);
 
         openApp();
 
-        ImageView thunder = findViewById(R.id.logo);
+        //ImageView thunder = findViewById(R.id.logo);
 
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.logoanim);
-        thunder.startAnimation(myanim);
+        //Animation myanim = AnimationUtils.loadAnimation(this, R.anim.logoanim);
+        //thunder.startAnimation(myanim);
     }
 
     private void openApp() {

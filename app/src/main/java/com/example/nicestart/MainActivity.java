@@ -7,6 +7,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +24,9 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
+    private WebView miVisorWeb;
     private SwipeRefreshLayout swipeLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,12 +37,24 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        TextView mycontext = findViewById(R.id.my_text);
+        WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
 
+        miVisorWeb = (WebView) findViewById(R.id.vistaweb);
+        String html = "<html>" +
+                "<head><style>" +
+                "html, body {margin: 0; padding: 0;height:100%;overflow:hidden}" +
+                "img{width:100%;height:100%;object-fit:cover;}" +
+                "</style></head>" +
+                "<body>" +
+                "<img src='https://thispersondoesnotexist.com' />" +
+                "</body></html>";
+
+        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
         swipeLayout = findViewById(R.id.my_swipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
     }
+
     protected SwipeRefreshLayout.OnRefreshListener
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
@@ -47,9 +62,11 @@ public class MainActivity extends AppCompatActivity {
 /*            Toast toast0 = Toast.makeText(MainActivity.this,"Hi there", Toast.LENGTH_LONG);
             toast0.show();*/
             Snackbar.make(swipeLayout, "Hi there", Snackbar.LENGTH_LONG).show();
+            miVisorWeb.reload();
             swipeLayout.setRefreshing(false);
         }
     };
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         getMenuInflater().inflate(R.menu.menu_context, menu);
@@ -57,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_appbar,menu);
+        getMenuInflater().inflate(R.menu.menu_appbar, menu);
         return true;
     }
 

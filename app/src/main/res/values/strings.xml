@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Nicestart</string>
+    <string name="app_name" translatable="false">Nicestart</string>
+    <string name="login" translatable="true">Login</string>
 </resources>

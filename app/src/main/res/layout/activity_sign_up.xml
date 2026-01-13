@@ -100,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_width="0dp"
         android:backgroundTint="@color/buttoncustom"
-        android:text="Confirm"
+        android:text="@string/login"
         android:onClick="openProfile"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toStartOf="@id/guideline2"

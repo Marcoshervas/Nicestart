@@ -19,11 +19,18 @@
             android:id="@+id/bottom_app_bar"
             android:layout_gravity="bottom"
             app:fabAlignmentMode="center"
-            app:menu="@menu/bottom_app_bar_menu"
+            app:menu="@menu/botton_app_bar_menu"
             app:navigationIcon="@drawable/key"/>
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/fab"
+            android:backgroundTint="@color/green_500"
+            android:src="@drawable/ic_thunder"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bottom_app_bar"
+            app:layout_anchorGravity="center"/>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

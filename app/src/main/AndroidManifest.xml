@@ -15,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nicestart.ActionBar">
         <activity
+            android:name=".MainBab"
+            android:exported="true"
+            android:theme="@style/Theme.Nicestart.ActionBar" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

@@ -14,7 +14,7 @@
         app:showAsAction="ifRoom">
         <menu>
             <item
-                android:id="@+id/item3"
+                android:id="@+id/bottom_app_bar"
                 android:title="Bottom app bar"
                 app:showAsAction="never"/>
             <item
@@ -27,7 +27,7 @@
         android:id="@+id/goLogin"
         android:title="Login button"
         android:icon="@drawable/ic_thunder"
-        android:iconTint="@color/black"
+        android:iconTint="@color/white"
         app:showAsAction="ifRoom"
         />
 </menu>

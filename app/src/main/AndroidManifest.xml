@@ -20,6 +20,7 @@
             android:theme="@style/Theme.Nicestart.ActionBar" />
         <activity
             android:name=".Profile"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Splash"

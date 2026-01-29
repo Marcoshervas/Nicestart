@@ -4,13 +4,14 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:windowIsTranslucent">true</item>
-        <item name="colorSurfaceContainer">@color/dark_blue</item>
+        <item name="colorSurfaceContainer">@color/white</item>
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
     <style name="Theme.Nicestart.ActionBar" parent="Base.Theme.Nicestart">
         <item name="actionBarStyle">@style/TransparentActionBar</item>
     </style>
+
 
     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">@color/transparent</item>

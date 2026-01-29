@@ -13,7 +13,7 @@ tenemos la navegacion para poder iniciar sesion o registrarse en nuestra aplicac
 tambien podemos ver como nos manda a nuestro perfil creado.
 Para hacer uso de las maneras de navegar hemos añadido un alert dialog para poder ir desde la ventana del main a la de login
 asi se puede navegar comodamente en nuestra app.
-De las ultimas cosas implementadas es la posibilidad de cambiar de idiomas. Y un tema oscuro.
+De las ultimas cosas implementadas es la posibilidad de cambiar de idiomas. Y un tema oscuro. Tambien hemos añadido otra nueva pantalla en la cual se puede hacer scroll y tiene una bottom app bar con un boton flotante.
 >This repository is licensed under
 >[Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 

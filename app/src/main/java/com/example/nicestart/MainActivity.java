@@ -82,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.goLogin) {
             showAlertDialogButtonClicked(this);
+        } else if (item.getItemId() == R.id.bottom_app_bar) {
+            goMainBob();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -99,7 +101,10 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
+    public void goMainBob(){
+        Intent intent = new Intent(MainActivity.this, MainBab.class);
+        startActivity(intent);
+    }
     public void showAlertDialogButtonClicked(MainActivity mainActivity) {
 
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
